@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:rotation="0"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/TextLocal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Local"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_marginTop="36dp"/>
+
+        <TextView
+            android:id="@+id/scoreUno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_below="@id/TextLocal"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"
+            tools:text="14" />
+
+        <TextView
+            android:id="@+id/textVisitante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Visitante"
+            android:textColor="@color/black"
+            android:textSize="35sp"
+            android:layout_marginTop="625dp"/>
+
+        <TextView
+            android:id="@+id/scoreDos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            android:layout_below="@id/imageView"
+            android:layout_marginTop="100dp"
+            tools:text="14"
+            android:layout_marginStart="150dp"
+            android:layout_marginEnd="150dp"/>
+
+        <Button
+            android:id="@+id/restart"
+            android:layout_width="75sp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/gray"
+            android:layout_marginTop="150dp"
+            android:layout_marginLeft="25dp"
+            app:icon="@android:drawable/ic_menu_revert"
+            android:layout_below="@id/scoreUno" />
+
+        <Button
+            android:id="@+id/menosUno"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/TextLocal"
+            android:backgroundTint="@color/gray"
+            android:text="-1"
+             />
+
+        <Button
+            android:id="@+id/masUno"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="15dp"
+            android:layout_below="@id/TextLocal"
+            android:backgroundTint="@color/gray"
+            android:text="+1"
+            />
+
+        <Button
+            android:id="@+id/masDos"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/masUno"
+            android:backgroundTint="@color/gray"
+            android:text="+2"
+            />
+
+        <Button
+            android:id="@+id/resultado"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/gray"
+            app:icon="@android:drawable/ic_media_play"
+            android:layout_below="@id/scoreUno"
+            android:layout_marginTop="140dp"
+            android:layout_marginLeft="315dp"
+            android:layout_marginBottom="100dp"
+            />
+
+
+
+        <Button
+            android:id="@+id/menosUnov"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="32dp"
+            android:backgroundTint="@color/gray"
+            android:layout_below="@id/restart"
+            android:layout_marginTop="50dp"
+            android:text="-1"
+            />
+
+        <Button
+            android:id="@+id/masUnov"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/gray"
+            android:layout_below="@id/resultado"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="20dp"
+            android:text="+1"
+            />
+
+        <Button
+            android:id="@+id/masDosv"
+            android:layout_width="75dp"
+            android:layout_height="50dp"
+            android:text="+2"
+            android:backgroundTint="@color/gray"
+            android:layout_below="@id/masUnov"
+            android:layout_marginLeft="310dp"
+            android:layout_marginTop="10dp"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginLeft="130dp"
+            android:background="@drawable/pelota"
+            android:layout_below="@id/scoreUno"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:text="Gerardo Gonzalez Cabral"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="45px"
+            />
+
+    </RelativeLayout>
+</layout>
